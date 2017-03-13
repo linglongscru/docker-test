@@ -1,0 +1,12 @@
+# Copy this file to "docker-compose.override.yml" which is ignored by Git
+# to create local configuration for Docker Compose. This overrides
+# default development configuration which is defined in "docker-compose.yml",
+# but does not affect other environments (eg production, testing).
+# Read more: https://docs.docker.com/compose/extends/
+
+version: '2'
+
+services:
+  web:
+    ports:
+      - 8080:8080
